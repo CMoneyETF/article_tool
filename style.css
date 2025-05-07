@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+#output {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    white-space: pre-wrap; /* 保留空白和換行 */
+}

@@ -4,6 +4,12 @@ document.getElementById('convertBtn').onclick = function() {
     document.getElementById('output').innerText = outputHtml; // 使用 innerText 顯示程式碼
 };
 
+document.getElementById('copyBtn').onclick = function() {
+    const outputText = document.getElementById('output').innerText;
+    navigator.clipboard.writeText(outputText);
+    alert('已複製到剪貼板!');
+};
+
 function convertFormat(text) {
     // 刪除包含數字的括弧文字
     text = text.replace(/\[\d+\]/g, '');
